@@ -1,0 +1,356 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  font: 16px/1.5 Arial, sans-serif;
+}
+
+/* =========================
+   THEME COLORS
+========================= */
+:root {
+  --primary: #0B3C8C;
+  --accent: #F4B400;
+  --dark: #1A1A1A;
+  --light: #FFFFFF;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: var(--primary);
+  color: var(--light);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header nav a {
+  color: var(--light);
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.header nav a:hover {
+  color: var(--accent);
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(11,60,140,0.7), rgba(11,60,140,0.7)),
+              url('../images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--accent);
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d99a00;
+}
+
+/* =========================
+   COMMON SECTION
+========================= */
+section {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   SERVICES (HOME)
+========================= */
+.service-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  background: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border-top: 4px solid var(--accent);
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about p {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* =========================
+   PORTFOLIO (HOME)
+========================= */
+.portfolio-grid {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-grid img {
+  width: 300px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   CTA
+========================= */
+.cta {
+  background: var(--primary);
+  color: white;
+}
+
+.cta .btn {
+  margin-top: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--dark);
+  color: white;
+}
+
+/* =========================
+   SERVICES PAGE
+========================= */
+.services-page {
+  padding: 80px;
+  text-align: center;
+}
+
+.services-intro {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: left;
+  border-top: 4px solid var(--accent);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* =========================
+   PORTFOLIO PAGE
+========================= */
+.portfolio-page {
+  padding: 80px;
+}
+
+.portfolio-intro {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+/* FILTER BUTTONS */
+.filters button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.filters button:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* GRID */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.portfolio-card {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-card img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+.contact-page {
+  padding: 80px;
+}
+
+.contact-intro {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  cursor: pointer;
+}
+
+/* INFO */
+.contact-info {
+  text-align: left;
+  max-width: 300px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* =========================
+   RESPONSIVE (VERY IMPORTANT)
+========================= */
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .service,
+  .service-card,
+  .portfolio-card {
+    width: 90%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}

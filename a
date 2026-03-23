@@ -1,0 +1,19 @@
+rudra-graphics/
+│
+├── index.html
+├── about.html
+├── services.html
+├── portfolio.html
+├── contact.html
+│
+├── components/
+│   ├── header.html
+│   └── footer.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── images/

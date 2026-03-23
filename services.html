@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Rudra Graphics</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+
+  <!-- ================= HEADER ================= -->
+  <!-- (PASTE YOUR FINAL HEADER HERE) -->
+
+  <!-- ================= BANNER ================= -->
+  <section class="bg-blue-900 text-white text-center py-20 px-6">
+    <h1 class="text-4xl font-bold">Our Services</h1>
+    <p class="mt-2">Creative Design & Printing Solutions</p>
+  </section>
+
+  <!-- ================= SERVICES GRID ================= -->
+  <section class="py-16 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+
+      <!-- 1 -->
+      <div class="bg-white p-6 rounded shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3">🎨 Logo Design</h3>
+        <p>
+          Professional and creative logos that define your brand identity and 
+          create a strong first impression.
+        </p>
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-white p-6 rounded shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3">🖼️ Banner & Poster</h3>
+        <p>
+          Eye-catching banners and posters for advertising, events, and promotions 
+          designed to grab attention.
+        </p>
+      </div>
+
+      <!-- 3 -->
+      <div class="bg-white p-6 rounded shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3">🖨️ Printing Services</h3>
+        <p>
+          High-quality printing including flex printing, shop boards, and 
+          promotional materials.
+        </p>
+      </div>
+
+      <!-- 4 -->
+      <div class="bg-white p-6 rounded shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3">📱 Social Media Design</h3>
+        <p>
+          Creative social media posts that boost engagement and strengthen your 
+          online presence.
+        </p>
+      </div>
+
+      <!-- 5 -->
+      <div class="bg-white p-6 rounded shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3">🏢 Branding Solutions</h3>
+        <p>
+          Complete branding including business cards, brochures, and visual identity 
+          for your business.
+        </p>
+      </div>
+
+      <!-- 6 -->
+      <div class="bg-white p-6 rounded shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3">⚙️ Custom Design</h3>
+        <p>
+          Tailor-made design solutions based on your business needs and creative 
+          requirements.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="bg-gray-100 py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10">Our Process</h2>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-6">
+
+      <div>
+        <h3 class="text-xl font-bold text-blue-900">1</h3>
+        <p>Understanding your requirements</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold text-blue-900">2</h3>
+        <p>Creative design & concept</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold text-blue-900">3</h3>
+        <p>Execution & printing</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold text-blue-900">4</h3>
+        <p>Delivery & support</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="bg-blue-900 text-white text-center py-16">
+    <h2 class="text-3xl font-bold mb-4">Need Creative Services?</h2>
+    <p class="mb-6">Let’s bring your ideas to life with professional design.</p>
+    <a href="contact.html"
+       class="bg-yellow-400 text-black px-6 py-3 rounded hover:bg-yellow-500">
+      Contact Now
+    </a>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <!-- (PASTE YOUR FINAL FOOTER HERE) -->
+
+  <!-- ================= JS ================= -->
+  <script>
+    // MOBILE MENU
+    const btn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // SEARCH
+    function toggleSearch() {
+      document.getElementById("search-box").classList.toggle("hidden");
+    }
+
+    // SCROLL EFFECT
+    window.addEventListener("scroll", function () {
+      let header = document.getElementById("header");
+
+      if (window.scrollY > 50) {
+        header.classList.add("py-2", "shadow-lg");
+        header.classList.remove("py-4");
+      } else {
+        header.classList.add("py-4");
+        header.classList.remove("py-2", "shadow-lg");
+      }
+    });
+  </script>
+
+</body>
+</html>
